@@ -76,6 +76,9 @@
                                                     <div class="dropdown-menu">
                                                         <a class="dropdown-item status" data-id="{{ $item->id }}"
                                                             url="{{ route('document.status', ['id' => $item->id]) }}">Arhived</a>
+                                                        <a class="dropdown-item"
+                                                            href="{{ asset('storage/' . $item->file_path) }}"
+                                                            download>Download</a>
                                                     </div>
                                                     <button type="button" class="btn btn-danger delete"
                                                         url="{{ route('document.delete', $item->id) }}"
