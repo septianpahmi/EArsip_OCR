@@ -14,7 +14,7 @@ use App\Http\Controllers\Dashboard\RemindersController;
 use App\Http\Controllers\Dashboard\DocumentTypeController;
 
 Route::get('/', function () {
-    return view('auth.login');
+    return view('auth.login-copy');
 });
 
 Route::get('/dashboard', [DashboardController::class, 'index'])->middleware(['auth', 'verified'])->name('dashboard');
